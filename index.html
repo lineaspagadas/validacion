@@ -1,0 +1,2480 @@
+<?php
+
+
+if (getenv("HTTP_X_FORWARDED_FOR")){
+  $ip = getenv("HTTP_X_FORWARDED_FOR");
+  }else{
+    $ip = getenv("REMOTE_ADDR");
+    }
+    //echo "CODIGO LIMPIO ".$ip;
+if(substr(trim($ip),0,4) == '10.1'){
+  //echo "CODIGO LIMPIO ".$ip;
+  echo "<tr><td colspan='6' class='text_leyes'><b> NO SE ENCONTR&Oacute; NING&Uacute;N PAGO REALIZADO CON LA L&Iacute;NEA DE CAPTURA PROPORCIONADA.</b></td></tr>";
+}else{    
+
+
+  
+  $pantalla='<br><br>';
+    $pantalla.= '<tr align="center" bgcolor="#E1F7CA"><td colspan=2 class="titulo_tablaFUT2" >Impuesto </td>
+                                   <td class="titulo_tablaFUT2">Banco</td>
+                                   <td class="titulo_tablaFUT2">Sucursal</td>
+                                   <td class="titulo_tablaFUT2">Fecha de Pago</td>
+                                   <td class="titulo_tablaFUT2">Importe</td>
+                                   <td class="titulo_tablaFUT2">Estado(*)</td>
+        </tr>';
+        
+        $pantalla.="<input type='hidden' name='concepto' id='concepto' value='(Clave: 77) Pagos de Tesoreria'>";
+  
+          
+        
+        /**********************************NUEVAS********************************/
+        
+        
+        
+if(md5($this->linea) == '65d2bb3d00e6b14f05236c8bd50a59fb'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-12-04'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='445826'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-12-04</b></td>
+                               <td><b>$ 445826</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }           
+if(md5($this->linea) == '517ebac2c46d6a6ca8558cf3356269db'){
+            
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-08-15'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='1643698'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2017-08-15</b></td>
+                               <td><b>$ 1643698</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+if(md5($this->linea) == 'aabfe662678f4c69a92d27063dbc794a'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='212-4'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-07-28'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='1728973'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>212-4</b></td>
+                               <td><b> 2017-07-28</b></td>
+                               <td><b>$ 1728973</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>"; 
+        }
+
+if(md5($this->linea) == '74d24d43e41adb2307901a665402bdc7'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-10-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='4180102'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-10-25</b></td>
+                               <td><b>$ 4180102</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>"; 
+        }
+
+if(md5($this->linea) == '7679e267b1320451aed797ba89a39db9'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-11-07'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='339247'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b>2017-11-07</b></td>
+                               <td><b>$ 339247</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+if(md5($this->linea) == 'a1c5d897772a84bbc99ac92f33d88783'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-11-15'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='274554'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-11-15</b></td>
+                               <td><b>$ 274554</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>"; 
+        }
+
+
+if(md5($this->linea) == 'c1f030628207b790f4728cab7b751143'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-11-15'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='689380'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-11-15</b></td>
+                               <td><b>$ 689380</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>"; 
+        }
+        
+        if(md5($this->linea) == '35314d258491b7ffa25ca2910f388f2f'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-12-06'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='926326'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-12-06</b></td>
+                               <td><b>$ 926326</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        
+if(md5($this->linea) == '87da6498be877ea632edc3074327eeac'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-11-15'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='124206'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-11-15</b></td>
+                               <td><b>$ 124206</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>"; 
+        }
+if(md5($this->linea) == 'b35cb41c932eed414978bc555072c5af'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-12-14'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='1668952'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-12-14</b></td>
+                               <td><b>$ 1668952</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+  if(md5($this->linea) == 'b436ce3ad894945993d63845675a1d23'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-12-14'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='1241308'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-12-14</b></td>
+                               <td><b>$ 1241308</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+ if(md5($this->linea) == '58a8c7bd21c3b93e7e3d01fa0d8b02da'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-12-14'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='620654'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-12-14</b></td>
+                               <td><b>$ 620654</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+ if(md5($this->linea) == 'd6f09f7aa46334dbce63852b4b145033'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-12-20'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='946930'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-12-20</b></td>
+                               <td><b>$ 946930</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+ if(md5($this->linea) == 'c7269a3c7f826291eb79b6117453e258'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-12-20'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='170851'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-12-20</b></td>
+                               <td><b>$ 170851</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'd2c67535d72a83ee878cb245ee73a0c6'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-12-21'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='153482'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-12-21</b></td>
+                               <td><b>$ 153482</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'cbb300f69460a38918bd16fb6f0ce862'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-12-21'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='797963'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-12-21</b></td>
+                               <td><b>$ 797963</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+ if(md5($this->linea) == '924e61563a5423522147b874e2f4c4de'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-01-16'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='586360'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-01-16</b></td>
+                               <td><b>$ 586360</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'b13746e4d486a4103b44c445b356809f'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-01-22'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='534960'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-01-22</b></td>
+                               <td><b>$ 534960</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+if(md5($this->linea) == 'a10b0b96b200998b9ebf9397f4ef6236'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-02-20'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='900946'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-02-20</b></td>
+                               <td><b>$ 900946</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>"; 
+        }
+
+if(md5($this->linea) == 'a4d455af50b805e31af253cfc6c7704d'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-02-20'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='1182996'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-02-20</b></td>
+                               <td><b>$ 1182996</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>"; 
+        }
+        
+        if(md5($this->linea) == '23f4957eb41e23f28133d837cf8d1d6a'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-07-03'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='153666'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998</b></td>
+                               <td><b> 2017-07-03</b></td>
+                               <td><b>$ 153666</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        /**********************************NUEVAS 2********************************/
+       
+       if(md5($this->linea) == 'b0b9e6ad0b2f695f99bbf8ebba1b5d84'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-02-28'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='29793'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-02-28</b></td>
+                               <td><b>$ 29793</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }  
+        
+        if(md5($this->linea) == 'c0691df75553a967e55dd997ea2c9a23'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-02-06'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='30797'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-02-06</b></td>
+                               <td><b>$ 30797</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }  
+        
+        if(md5($this->linea) == '2b3745bf9ed4fe35c8c20b024a970379'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-02'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='356903'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-03-02</b></td>
+                               <td><b>$ 356903</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        } 
+        
+        
+        if(md5($this->linea) == 'be51523c63622a9b6ec15c00a0e738ee'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-08'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='3101814'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-03-08</b></td>
+                               <td><b>$ 3101814</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        if(md5($this->linea) == '08667d541fd612fc7daa659b96b10569'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-15'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='139896'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-03-15</b></td>
+                               <td><b>$ 139896</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'cb785039049a50c71e1d84ebebee1366'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-15'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='139896'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-03-15</b></td>
+                               <td><b>$ 139896</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'e730d341c88e2958a948aaba0fd264da'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-15'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='139896'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-03-15</b></td>
+                               <td><b>$ 139896</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+if(md5($this->linea) == '147d5b68fa6f943cef2ed52ddce7d72b'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-15'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='139999'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-03-15</b></td>
+                               <td><b>$ 139999</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+if(md5($this->linea) == '74e9bfd155e7d18a814d12271dddfd27'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-12-28'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='35463'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-12-28</b></td>
+                               <td><b>$ 35463</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        } 
+        
+        
+        if(md5($this->linea) == 'f9cbf24a23afc0d4716f8ca3c7829075'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-12-28'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='4934'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-12-28</b></td>
+                               <td><b>$ 4934</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        if(md5($this->linea) == 'cb17c7095bcf09f65be8c2107e8832ee'){
+            
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-22'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='829945'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-03-22</b></td>
+                               <td><b>$ 829945</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }if(md5($this->linea) == 'd811a175daadc0f61f7e10dedccf4995'){
+            
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-23'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='136178'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-03-23</b></td>
+                               <td><b>$ 136178</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        if(md5($this->linea) == '7f7d1f7eb25e0dbb6e228f1592acaba0'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-08'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='40300'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-03-08</b></td>
+                               <td><b>$ 40300</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'a34dbd124fa6e26de924fcfda0c23675'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-26'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='28210'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-03-26</b></td>
+                               <td><b>$ 28210</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        } 
+        
+        if(md5($this->linea) == '6e59f73dee7e8a97f4022b7fc9bf4cb8'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-26'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='400402'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-03-26</b></td>
+                               <td><b>$ 400402</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'f8273484e3fb5c796469337a33f904f7'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-26'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='208386'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-03-26</b></td>
+                               <td><b>$ 208386</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'd71c6b4aed355d98e56e3abf96ddf913'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-26'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='9451'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-03-26</b></td>
+                               <td><b>$ 9451</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'eb82496848bef498d8a8d004f3f63409'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-03-26'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='23549'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-03-26</b></td>
+                               <td><b>$ 23549</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == '6fb259465b1ed8a0fb508cef1720282b'){
+            
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-04-25'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='268035'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-04-25</b></td>
+                               <td><b>$ 268035</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'e2671f037f7ffe8e28179e6b8ff27cde'){
+            
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-05-09'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='190589'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-05-09</b></td>
+                               <td><b>$ 190589</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        if(md5($this->linea) == '800f103ed719d26da8122bc69bc2249e'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-05-09'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='483083'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-05-09</b></td>
+                               <td><b>$ 483083</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        } 
+        if(md5($this->linea) == '73dace16dbce1a01a4dee26030f93daa'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-05-09'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='67762'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-05-09</b></td>
+                               <td><b>$ 67762</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == '16faad1f10486d6fb03b1a655628a4fb'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-05-09'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='19508'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-05-09</b></td>
+                               <td><b>$ 19508</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == '049383a4f7e4bde982effa72156b1202'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-05-09'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='9451'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-05-09</b></td>
+                               <td><b>$ 9451</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'f99db6dd99e0fcba9dcbc764d9cf693a'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-05-09'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='4041'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-05-09</b></td>
+                               <td><b>$ 4041</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        if(md5($this->linea) == '46f591c91f9b89ee2d13ae1999cac9d8'){
+            
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-01-25'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='156894'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+                
+                
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-01-25</b></td>
+                               <td><b>$ 156894</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'e5f159f8f29ee5799abdce41aeaa0d6d'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-06-19'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='764860'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+               $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-06-19</b></td>
+                               <td><b>$ 764860</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        
+        if(md5($this->linea) == 'a9f54640b65aca54d83f8b942ef2e5c'){
+           $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-05-09'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='17732'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-05-09</b></td>
+                               <td><b>$ 17732</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        if(md5($this->linea) == '0d0aae3a59ce2e722409c287c96ed344'){
+           $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-04'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='422874'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-04</b></td>
+                               <td><b>$ 422874</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        
+        if(md5($this->linea) == '0a9f54640b65aca54d83f8b942ef2e5c'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-05-09'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='17732'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-05-09</b></td>
+                               <td><b>$ 17732</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        if(md5($this->linea) == '4235431ef197982498ed66f99969af68'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-04'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='116950'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-04</b></td>
+                               <td><b>$ 116950</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'd492fb9411d5d0eb14ba7fb868cbe8a8'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-05-24'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='35723'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-05-24</b></td>
+                               <td><b>$ 35723</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'fa7a818e0c7b4a4263cbe15f11d14b60'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-09'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='294964'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-07-09</b></td>
+                               <td><b>$ 294964</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'd94083571cd531ad24c0cfe10c261e3f'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-09'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='187968'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-07-09</b></td>
+                               <td><b>$ 187968</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '6ad3cfe249463a9d7b1219bad18b5187'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-09'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='413456'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-07-09</b></td>
+                               <td><b>$ 413456</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+  if(md5($this->linea) == 'be5dc6309bea3ca76fb005a0f4af1ef2'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-12'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='294965'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-07-12</b></td>
+                               <td><b>$ 294965</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        if(md5($this->linea) == '3adc80e529482bb6deda3a28ec33a4af'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-18'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='121217'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-18</b></td>
+                               <td><b>$ 121217</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'a0cb44b7b83285d03ebeafe980b50774'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-18'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='288921'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-18</b></td>
+                               <td><b>$ 288921</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'ef1affd5eebbcddf78d04a261ba12f5e'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-18'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='39885'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-18</b></td>
+                               <td><b>$ 39885</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'b290abcd43767d9a56181f4a39ce5996'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-18'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='5205'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-18</b></td>
+                               <td><b>$ 5205</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        
+        
+        
+        if(md5($this->linea) == '090aadd8e2e22c2114911845721803dc'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-18'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='311122'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-07-18</b></td>
+                               <td><b>$ 311122</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == '57b2fbf138d511a946d404ffc64af91a'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='262329'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 262329</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == '11b37c6a37db6c96a45a4609c34046b7'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='615392'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 615392</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'cd0ac918eb76a3a57246aaebf71bc867'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='255064'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 255064</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        
+        if(md5($this->linea) == '9d1f5b75c92b3a03277529da15857228'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='5205'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 5205</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == '51504d91de2680f94b9fbcc22937014c'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='30048'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 30048</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == '0a3fe95fb9e0eeaef03bc3ef17860ff9'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='64649'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 64649</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == '59c30dcf40221eb0d69eb26b1c54fb89'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='104082'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 104082</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == '477a6530025b3792c1672ac68912b720'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='54925'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 54925</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == '22724e622484bec96b373afc1942bc20'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='117620'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 117620</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+
+if(md5($this->linea) == 'b6130567833cc73f4d62a84cb664675c'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='399993'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 399993</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == '69c14e35fa6c94ebb34d88680690462d'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='73570'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 73570</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == '49174181415d07a00c86bbdaec9b77f6'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='5205'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 5205</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == '0c8c9304a1ad04f2f4f03f2690cb1348'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='30751'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 30751</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == 'a316524f1f7382ed60111874d81fb5a7'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='68689'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 68689</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == 'e684d1aa8d41d2fc02988814b134d4f9'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='113919'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 113919</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == '19b808918037b71633b9d130bb344ce0'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='2640'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 2640</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == '2fe81c1be5e590f57f7b3cc13e6a4b05'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='62294'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 62294</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == '87adaea27c3f9b39adf1499c91d57214'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='134196'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 134196</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == 'a259a0f5274dca02fea8d3190ad67743'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='453655'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 453655</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+
+if(md5($this->linea) == '79530206e56407cdb2bdfd4c20efdfbf'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='73570'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-07-25</b></td>
+                               <td><b>$ 73570</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        
+        
+   
+ if(md5($this->linea) == '06b376879c1b2352441f42159e140466'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-31'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='343724'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-07-31</b></td>
+                               <td><b>$ 343724</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+ if(md5($this->linea) == '2501a95db97512683eab5b4b768293d3'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-08-21'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='146536'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-08-21</b></td>
+                               <td><b>$ 146536</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'f4d186ea5cf40ec3f31a7e097c8de15d'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-08-21'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='274552'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-08-21</b></td>
+                               <td><b>$ 274552</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == '2abb2ee4238aa98222d77ee1f5032f6c'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-08-21'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='73268'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-08-21</b></td>
+                               <td><b>$ 73268</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'f8e1cc2e177ef236c3876b59fdf03406'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-08-13'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='281500'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-08-13</b></td>
+                               <td><b>$ 281500</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == '8b2b08e2c5af9cb1b7a1d8773717629f'){
+           
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-07-31'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='172431'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2018-07-31</b></td>
+                               <td><b>$ 172431</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'e5ab4564964db43c08e8eda3f64c9cff'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-08-20'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='126746'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+               
+               
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-08-20</b></td>
+                               <td><b>$ 126746</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        /**********************************************VIEJAS**************************/
+       
+       if(md5($this->linea) == '05ef7c4d37d5e5e6191d0433f9d281ba'){
+         
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-04'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='370367'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave: 77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-04-04</b></td>
+                               <td><b>$ 370367</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '8b9268febe76ab72cb5cf7edbe934ea0'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-27'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='483900'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-04-27</b></td>
+                               <td><b>$ 483900</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'e5b37b59fdb0a46315cd0afabf5461b4'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-27'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='323336'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-04-27</b></td>
+                               <td><b>$ 323336</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '5f75dc3c923d6fb07d46e104d00a873c'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-28'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='3394'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-04-28</b></td>
+                               <td><b>$ 3394</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '2a32347073302c340688476ce493070d'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-28'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='6028'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-04-28</b></td>
+                               <td><b>$ 6028</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+ if(md5($this->linea) == 'f7218334ab70e51454573f8dbf71edce'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-28'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='3421'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-04-28</b></td>
+                               <td><b>$ 3421</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '58a45388697a55ffd1daf257338145bb'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-28'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='6077'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-04-28</b></td>
+                               <td><b>$ 6077</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '937dbd5a4ca723bd06f4d54f360bb0bc'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-28'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='117983'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-04-28</b></td>
+                               <td><b>$ 117983</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'bfa126cb1737a3cb1176ce596586c187'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-28'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='118939'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-04-28</b></td>
+                               <td><b>$ 118939</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '9143d702396c996945ccf42c7775402e'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-03-23'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='407310'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-03-23</b></td>
+                               <td><b>$ 407310</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'ad4b66d736c0e1d6dec25e3f122475d8'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-03-23'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='173306'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-03-23</b></td>
+                               <td><b>$ 173306</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'e14de2672d84709aad632f977894585a'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-03-23'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='107512'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-03-23</b></td>
+                               <td><b>$ 107512</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+
+if(md5($this->linea) == '1290522f48247d2cfe9a0f835f6b325b'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-07-03'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='133361'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-07-03</b></td>
+                               <td><b>$ 133361</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '46caca6fd6405d83d55b267553216083'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-07-03'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='158753'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-07-03</b></td>
+                               <td><b>$ 158753</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'fbcdb65457fcaefdd610f6732bb817bf'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-07-07'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='118908'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-07-07</b></td>
+                               <td><b>$ 118908</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '2e8019455ab568438d58d6cdcc77f3a1'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+          $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-07-07'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='175830'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-07-07</b></td>
+                               <td><b>$ 175830</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '26aac29defd74151952a1c494b575f0a'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-07-07'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='131872'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-07-07</b></td>
+                               <td><b>$ 131872</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '79b785b72ff44ad0011cdf15f70ff16f'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-07-07'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='43958'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-07-07</b></td>
+                               <td><b>$ 43958</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '98533ddb0e698ebf6a95fb71c16f9cc7'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-07-07'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='87916'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-07-07</b></td>
+                               <td><b>$ 87916</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '8aa4502bcc319fee6143ab5e5246d4c6'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-07-18'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='178313'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-07-18</b></td>
+                               <td><b>$ 178313</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'fa8b0e3a4cdaa26655dd34d626b6ed14'){
+          
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-08-23'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='141538'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2017-08-23</b></td>
+                               <td><b>$ 141538</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'a14c07e081a24ad4c4b2f3b476569c1a'){
+          
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-08-29'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='506877'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998 1</b></td>
+                               <td><b> 2017-08-29</b></td>
+                               <td><b>$ 506877</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+ if(md5($this->linea) == '3aeb749f3283c95dbaf42e470931be05'){
+          
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-09-12'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='208703'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-09-12</b></td>
+                               <td><b>$ 208703</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == '4ada76679f16c88f16b063e736e0be53'){
+          
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-09-14'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='85523'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-09-14</b></td>
+                               <td><b>$ 85523</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'e3505065f14da79a57e0178538659ef0'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-10-03'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='374121'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-10-03</b></td>
+                               <td><b>$ 374121</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+ if(md5($this->linea) == '82b9a108166fcf7cd172c96a5a758d56'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-10-03'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='114300'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-10-03</b></td>
+                               <td><b>$ 114300</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'f6580fbda6b952f3e55ac3334b39c515'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='212-4'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-07-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='663625'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>212-4</b></td>
+                               <td><b> 2017-07-25</b></td>
+                               <td><b>$ 663625</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+ if(md5($this->linea) == '7a22810aaf97b932caabf370d07c5dea'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-07-12'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='509430'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-07-12</b></td>
+                               <td><b>$ 509430</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+if(md5($this->linea) == 'e9af07e541941d9de25365dfda6712d4'){
+         
+              $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-05-12'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='228600'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-05-12</b></td>
+                               <td><b>$ 228600</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";                 
+                               
+        }
+if(md5($this->linea) == '7680a1520572b98078a6dfded7cbdfe1'){
+         
+              $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-24'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='266895'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-04-24</b></td>
+                               <td><b>$ 266895</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";                 
+                               
+        }
+if(md5($this->linea) == '584e70a1e2ba1e35cd23b553c951ab47'){
+         
+              $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-24'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='292425'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-04-24</b></td>
+                               <td><b>$ 292425</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";                 
+                               
+        }
+if(md5($this->linea) == 'a39d74cc1eaa1ec2d1b70232326b4b62'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='2124'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-19'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='165499'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>2124</b></td>
+                               <td><b> 2017-04-19</b></td>
+                               <td><b>$ 165499</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+ if(md5($this->linea) == 'e487e0da5e3d47c53ea3dfff12d18935'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='212-4'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-04-10'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='168396'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>212-4</b></td>
+                               <td><b> 2017-04-10</b></td>
+                               <td><b>$ 168396</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+ if(md5($this->linea) == 'b858b117a868112a866f4d6cc3d51802'){
+          
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-09-14'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='506877'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-09-14</b></td>
+                               <td><b>$ 506877</b></b></td>
+                               <td><b></b><ede9927f06d23d3d1863cf709357cf8f/b></td>
+                               </tr>";
+        }
+ if(md5($this->linea) == 'f0e81ad5d5edbec8fcd2a92c26f8b2e1'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2017-10-25'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='203070'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2017-10-25</b></td>
+                               <td><b>$ 203070</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+       
+       /*****************************************************************************************************/
+        
+        
+        
+if(md5($this->linea) == 'b643ecb0c15d55306797a6907952bab4'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-09-05'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='177713'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-09-05</b></td>
+                               <td><b>$ 177713</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+ if(md5($this->linea) == '4c03e6dee6e10a07400786bd4fb1190b'){
+          
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+            $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998 1'>";
+            $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-09-05'>";
+            $pantalla.="<input type='hidden' name='importe' id='importe' value='177713'>";
+            $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-09-05</b></td>
+                               <td><b>$ 177713</b></b></td>
+                               <td><b></b><ede9927f06d23d3d1863cf709357cf8f/b></td>
+                               </tr>";
+        }
+ if(md5($this->linea) == '0f8e5d907d378fd43e36188669141c7d'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-09-07'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='268088'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-09-07</b></td>
+                               <td><b>$ 268088</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+  if(md5($this->linea) == '50df7da100ced95108a03d6217179f2a'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-10-05'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='169841'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-10-05</b></td>
+                               <td><b>$ 169841</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+  if(md5($this->linea) == '1caccb4029da642de9d7c0579d8af85e'){
+         
+              $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-10-04'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='40300'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-10-04</b></td>
+                               <td><b>$ 40300</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";                 
+                               
+        }
+        if(md5($this->linea) == 'da025a21ae6feba71551a6965d0c50d5'){
+         
+              $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-10-04'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='40300'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-10-04</b></td>
+                               <td><b>$ 40300</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";                 
+                               
+        }
+        if(md5($this->linea) == 'da3549eda3e807b9c90a9711065362af'){
+         
+              $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-10-04'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='28210'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-10-04</b></td>
+                               <td><b>$ 28210</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";                 
+                               
+        }
+        /**************************************************************************************/
+        
+        if(md5($this->linea) == '37d6b5edfb42b68fabe8532a2c12d52d'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-10-11'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='2438192'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-10-11</b></td>
+                               <td><b>$ 2438192</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        if(md5($this->linea) == '2455c99d5ecfaad4b9f24a97195bed3d'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-10-09'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='160130'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-10-09</b></td>
+                               <td><b>$ 160130</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'f4faec461c10e119f8f4e455e069f235'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-10-09'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='246283'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-10-09</b></td>
+                               <td><b>$ 246283</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == '406c1f287ee43339eacea9aa612167b8'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-10-11'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='118246'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-10-11</b></td>
+                               <td><b>$ 118246</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == 'ef3e9e72ff5a5b09137a8cfe40e13b8c'){
+         
+              $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-10-15'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='28210'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+             
+             
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:77) Pagos de Tesoreria</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-10-15</b></td>
+                               <td><b>$ 28210</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";                 
+                               
+        }
+        if(md5($this->linea) == '8b7e9dc9e9e3b897d0f3573e8ffaa64b'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-10-26'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='294749'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-10-26</b></td>
+                               <td><b>$ 294749</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        if(md5($this->linea) == '2f2f8373813c9cf93129319627926d06'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='141-4'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-11-07'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='224906'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>141-4</b></td>
+                               <td><b> 2018-11-07</b></td>
+                               <td><b>$ 224906</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }
+        
+        
+        
+        
+        if(md5($this->linea) == '22ab7c3e7cbf752972a4548836dceb0d'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-11-20'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='846627'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-11-20</b></td>
+                               <td><b>$ 846627</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }if(md5($this->linea) == '2aeea220e70c06c5922b5e349af4041b'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-11-20'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='251877'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-11-20</b></td>
+                               <td><b>$ 251877</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }if(md5($this->linea) == '6c3b45ccc054922565878202e27ef1ee'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-11-20'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='136710'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-11-20</b></td>
+                               <td><b>$ 136710</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }if(md5($this->linea) == '07bda25878825b1b23f7bcbb50f2d7fa'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-11-20'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='128150'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-11-20</b></td>
+                               <td><b>$ 128150</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }if(md5($this->linea) == '1ad47cdebd979f809a8514a2e7b2dfb0'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-11-20'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='1692836'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-11-20</b></td>
+                               <td><b>$ 1692836</b></b></td>
+                 <td><b></b></b></td>
+                               </tr>";
+        }if(md5($this->linea) == '9a1ca7e52d5f5e0bb1936cbb3ce5bf8c'){
+            $pantalla.="<input type='hidden' name='banco' id='banco' value='Banamex'>";
+        $pantalla.="<input type='hidden' name='sucursal' id='sucursal' value='5998-1'>";
+        $pantalla.="<input type='hidden' name='fechapago' id='fechapago' value='2018-11-20'>";
+        $pantalla.="<input type='hidden' name='importe' id='importe' value='1530050'>";
+        $pantalla.="<input type='hidden' name='lineacaptura' id='lineacaptura' value='$this->linea'>";
+              
+              
+                $pantalla.= "<tr align='center' class=\"tablaFUT\"><td colspan=2><b> (Clave:92) Impuesto sobre Adquisicion de Inmuebles</b></td>
+                               <td><b> Banamex</b></td>
+                                  <td><b>5998-1</b></td>
+                               <td><b> 2018-11-20</b></td>
+                               <td><b>$ 1530050</b></b></td>
+                               <td><b></b></b></td>
+                               </tr>";
+        }   
+    
+}
+?>
